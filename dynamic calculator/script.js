@@ -33,7 +33,7 @@ function calculateResult() {
 
 
 //ka emehan lamangs
-//mostly AI ito
+//most of it ay AI
 
 const button = document.getElementById("boom");
 const shardImg = new Image();
@@ -193,3 +193,4 @@ button.addEventListener("click", () => {
   document.querySelector("h1").textContent = "Dynamic Calculator";
   };
 });
+
