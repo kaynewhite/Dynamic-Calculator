@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Dynamic Calculator</h1>
+    </div>
+    <div class="calculator">
+        <input type="text" id="result" placeholder="0" disabled/>
+        <!-- keys for the calc that uses onclick to run some functions -->
+        <div class="keys">
+            <button onclick="clearResult()">C</button>
+            <button onclick="deleteDigit()">CE</button>
+            <button onclick="addToResult('%')">%</button>
+            <button onclick="addToResult('/')">/</button>
+            <button onclick="addToResult('7')">7</button>
+            <button onclick="addToResult('8')">8</button>
+            <button onclick="addToResult('9')">9</button>
+            <button onclick="addToResult('*')">x</button>
+            <button onclick="addToResult('4')">4</button>
+            <button onclick="addToResult('5')">5</button>
+            <button onclick="addToResult('6')">6</button>
+            <button onclick="addToResult('-')">-</button>
+            <button onclick="addToResult('1')">1</button>
+            <button onclick="addToResult('2')">2</button>
+            <button onclick="addToResult('3')">3</button>
+            <button onclick="addToResult('+')">+</button>
+            <button onclick="addToResult('0')">0</button>
+            <button onclick="addToResult('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="ronButton()" id="boom">Ron</button> <!-- special btn, not important -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
